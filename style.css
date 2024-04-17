@@ -1,0 +1,80 @@
+:root {
+  --one: #222831;
+  --two: #31363F;
+  --three: #395B64;
+  --four: #76ABAE;
+  --five: #A5C9CA;
+  --six: #E7F6F2;
+  --seven: #EEEEEE;
+  --eight: #7fffd4; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Ramabhadra", sans-serif;
+  background-color: var(--one);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--eight);
+  font-size: 2.5rem;
+  margin: 20px;
+}
+h2 {
+  color: var(--five);
+  font-size: 2rem;
+  margin: 15px;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+section div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+  justify-content: center;
+  place-items: center;
+
+}
+section div article {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+img {
+  max-height: 80%;
+  max-width: 90%;
+  border-radius: 5px;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--four);
+  color: var(--six);
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--six);
+  color: var(--three);
+}
